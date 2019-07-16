@@ -1,0 +1,18 @@
+/* =============
+    Buttons
+============= */
+.good-button{
+    background-color: $button;
+    border-bottom-color:$button-shadow;
+    border-bottom-width: 8px;
+    border-bottom-style: solid;
+    height:32px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:17px 80px 0 80px;
+
+    li{
+
+    }
+}

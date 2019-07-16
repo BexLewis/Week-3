@@ -1,0 +1,103 @@
+/* =============
+    Housing
+============= */
+#housing {
+    > section {
+        background-color: $black;
+        display: grid;
+        grid-template-columns: 150px auto;
+        height: 147px;
+
+        div {
+            background-image: url("../img/housing.jpg");
+            background-repeat: no-repeat;
+            display: grid;
+            grid-template-areas: ". text .";
+            grid-template-columns: auto 360px;
+            height: 100%;
+
+            h1 {
+                color: $white;
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: rem-calc(45);
+                font-weight: 600;
+                grid-area: text;
+                margin-top: 100px;
+                text-align: right;
+            }
+        }
+    }
+
+    article {
+        padding: 15px;
+
+        aside {
+            margin-left: 15px;
+
+            h2 {
+                color: $subheading;
+                font-family: 'Assistant', sans-serif;
+                font-weight: 700;
+                margin-bottom: 10px;
+                margin-top: 30px;
+            }
+
+            p {
+                margin: 0 40px 0 30px;
+            }
+        }
+
+        p {
+            font-family: 'Heebo', sans-serif;
+            font-size: rem-calc(17);
+            grid-area: paragraph;
+            line-height: rem-calc(23);
+            text-align: justify;
+
+            a:link,
+            a:visited {
+                color: $link-accent;
+                font-size: rem-calc(17);
+                font-weight: 600;
+            }
+
+            a:active,
+            a:hover {
+                color: $black;
+            }
+        }
+    }
+
+    .button-container {
+        background-image: url("../img/housing-button-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 286px;
+        margin-bottom: 90px;
+        margin-top: 10px;
+        padding-top: 60px;
+
+        li:first-child {
+            color: $white;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: rem-calc(30);
+            text-align: center;
+        }
+
+        li {
+            color: $white;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: rem-calc(21);
+
+            a:link,
+            a:visited {
+                color: $white;
+            }
+
+            a:active,
+            a:hover {
+                color: $black;
+            }
+        }
+    }
+}
